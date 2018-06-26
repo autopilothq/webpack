@@ -22,9 +22,6 @@ environment:
     - nodejs_version: 10
       job_part: integration
       jest: --maxWorkers=2 --cacheDirectory .jest-cache
-    - nodejs_version: 6
-      job_part: integration
-      jest: --maxWorkers=2 --cacheDirectory .jest-cache
 
 install:
   - ps: Install-Product node $env:nodejs_version x64
